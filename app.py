@@ -67,11 +67,13 @@ def after_request(response):
 @app.route('/')
 def index():
     if g.user:
+        #homepage can be inserted here
         t = 'Hello! %s <a href="{{ url_for("user") }}">Get user</a> ' \
             '<a href="{{ url_for("repo") }}">Get repo</a> ' \
             '<a href="{{ url_for("logout") }}">Logout</a>'
-        t %= g.user.github_login
+        t %= g.user.github_login #it replaces %s with user's name
     else:
+        #login page can be inserted here
         t = 'Hello! <a href="{{ url_for("login") }}">Login with github</a>'
 
     return render_template_string(t)
@@ -114,6 +116,7 @@ def authorized(access_token):
 @app.route('/login')
 def login():
     if session.get('user_id', None) is None:
+        #login form can be inserted here
         return github.authorize()
     else:
         return 'Already logged in'
@@ -126,13 +129,14 @@ def logout():
 
 
 @app.route('/user')
-def user():
+def user(): #this function is used to get user's details
+    #we can put th profile section here
     return jsonify(github.get('/user'))
 
 
 @app.route('/repo')
 def repo():
-    return jsonify(github.get('/repos/cenkalti/github-flask'))
+    return jsonify(github.get('/repos/rpj09/FRIDAY-virtual-assistant'))
 
 
 if __name__ == '__main__':
