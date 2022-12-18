@@ -1,0 +1,113 @@
+/*
+	@name log_in_git
+*/
+/* Only edit this if you know what you are doing! */
+body { margin: 0px; padding: 0px; font-family:"Arial"; overflow-x:hidden; }
+
+/* Only edit this if you know what you are doing! */
+img { position: absolute; display: block; margin: 0px; border: none; padding: 0px; }
+
+/* Only edit this if you know what you are doing! */
+div { position: absolute; }
+
+#content-container { display: block; position: relative; width: 1440px; width: 1440px; height: 1024px; overflow: hidden; display: block;  margin-left: auto; margin-right: auto;  }
+
+#__bg__log_in_git {
+	top: 0%;
+	left: 0%;
+	width: 9000%;
+	height: 6400%;
+	background:rgba(0,0,0,1);
+}
+
+
+#anirudh_xu4pz7gi9jy_unsplash_1 {
+	top: 101px;
+	left: -193px;
+	width: 1483.72px;
+	height: 1430.08px;
+}
+
+#component_2 {
+	top: 403px;
+	left: 289px;
+	width: 862px;
+	height: 217px;
+}
+
+#_rectangle_1 {
+	top: 188px;
+	left: 311px;
+	width: 237px;
+	height: 28px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(217,217,217,1);
+}
+
+
+.log_in_with_github {
+	top: 187px;
+	left: 327px;
+	width: 234px;
+	height: 44px;
+	overflow: hidden;
+	font-family: Poppins;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: left;
+	color:#000000;
+}
+
+
+#let_s_git_reverb {
+	top: 0px;
+	left: 0px;
+	width: 963px;
+	height: 183px;
+	overflow: hidden;
+	font-family: Rubik;
+	font-size: 96px;
+	font-weight: bold;
+	text-align: left;
+	color:#FFFFFF;
+}
+
+
+#code_is_like_humor__when_you_have_to_explain_it__it_s_bad_ {
+	top: 116px;
+	left: 84px;
+	width: 724px;
+	height: 58px;
+	overflow: hidden;
+	font-family: Poppins;
+	font-size: 24px;
+	text-align: left;
+	color:#FFFFFF;
+}
+
+
+#git_analysis_networking_development_1 {
+	top: 43px;
+	left: 0px;
+	width: 76px;
+	height: 68px;
+}
+
+.button {
+    border: none;
+    color: #100f0f;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+/* Add your custom CSS here */

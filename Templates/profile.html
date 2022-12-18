@@ -1,0 +1,36 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    .avatar {
+      vertical-align: middle;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <img src={{avatar}} alt="Avatar" class="avatar">
+    
+ 
+<p>{{name}}</p>
+<p>{{bio}}</p>
+
+<p> </p>
+<a href="/user/followers">{{followers}} followers</a>
+<a href="/user/following"> {{following}} following</a>
+<p> </p>
+
+<ul>
+    {% for repoo in repos %}
+        <a href="{{repoo['url']}}"> ➤ {{repoo['name']}}</a>
+        <p> </p>
+        <p> </p>
+        {% if repoo['description']!=None  %}
+            <p> </p>
+            <p>➟DESCRIPTION: {{repoo['description']}}</p>
+        {% endif %}
+    {% endfor %}
+ </ul>
+</body>
