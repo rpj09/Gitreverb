@@ -3,9 +3,11 @@
     --------------
     Shows how to authorize users with Github.
 """
-from flask import Flask, request, g, session, redirect, url_for
+from flask import Flask, request, g, session, redirect, url_for, render_template
 from flask import render_template_string, jsonify
 from flask_github import GitHub
+import json
+import requests
 
 from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.orm import scoped_session, sessionmaker
@@ -131,7 +133,55 @@ def logout():
 @app.route('/user')
 def user(): #this function is used to get user's details
     #we can put th profile section here
-    return jsonify(github.get('/user'))
+    userss =(github.get('/user'))
+    repos= github.get('/user/repos')
+    repolist = []
+    for repo in repos:
+        repolist.append(repo['name'])
+    avatar = userss["avatar_url"]
+    name = userss["name"]
+    email = userss["email"]
+    bio = userss["bio"]
+    pubic_repos = userss["public_repos"]
+    followers = userss["followers"]
+    following = userss["following"]
+    
+    return render_template('profile.html', 
+                            avatar=avatar,
+                            name=name,
+                            bio=bio,
+                            followers= followers,
+                            following=following,
+                            public_repos=pubic_repos,
+                            email=email, 
+                            repolist=repolist,
+                            repos=repos)
+    #return jsonify(github.get('/user'))
+
+@app.route(f'/user/<username>')
+def anyuser(username):
+    return jsonify(github.get('/users/{}'.format(username)))
+
+@app.route('/user/followers')
+def followers():
+    followersjson = (github.get('/user/followers'))
+    followerslist =[]
+    for follower in followersjson:
+        followerslist.append(follower['login'])
+    return render_template('followers.html',
+                            followerslist=followerslist,
+                            followersjson=followersjson,
+                            url_for=url_for,
+                            anyuser=anyuser)
+    
+@app.route('/user/following')
+def following():
+    followingjson = (github.get('/user/following'))
+    followinglist = []
+    for following in followingjson:
+        followinglist.append(following['login'])
+    return render_template('following.html', followingjson=followingjson)
+
 
 
 @app.route('/repo')

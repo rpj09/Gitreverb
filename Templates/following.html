@@ -1,0 +1,7 @@
+<h1>FOLLOWING:</h1>
+<ul>
+    {% for user in followingjson %}
+        <a href="{{user['url']}}">{{user['login']}}</a>
+        <p> </p>
+    {% endfor %}
+ </ul>
