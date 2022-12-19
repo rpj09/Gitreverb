@@ -1,54 +1,72 @@
-<!-- 
-/*
- *	This content is generated from the PSD File Info.
- *	(Alt+Shift+Ctrl+I).
- *
- *	@desc 		
- *	@file 		log_in_git
- *	@date 		Friday 16th of December 2022 11:40:52 AM
- *	@title 		LOG IN PAGE
- *	@author 	
- *	@keywords 	
- *	@generator 	Export Kit v1.3.figma
- *
-*/
- -->
- <!DOCTYPE html>
- <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" >
-     <head>
-         <meta http-equiv="content-type" content="text/html" charset="utf-8" />
-         <title>log_in_git</title>
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <meta name="description" content="" >
-         <link rel="StyleSheet" href="{{ url_for('static', filename='css/main.css') }}" />
-         <script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
-         <!-- Add your custom HEAD content here -->
- 
-     </head>
-     <body>
-         <div id="content-container" >
-             <a id="__bg__log_in_git_link" href="{{ url_for('login') }}" >
-             <div id="__bg__log_in_git"  ></div>
-             </a>
-             <img src="/Users/ripunjaysingh/learn/Gitreverb/Templates/skins/anirudh_xu4pz7gi9jy_unsplash_1.png" id="anirudh_xu4pz7gi9jy_unsplash_1" />
- 
-             <div id="component_2"  >
-                 <a id="_rectangle_1_link" href="{{ url_for('login') }}" >
-                 <div id="_rectangle_1"  ></div>
-                 </a>
-                 <button class="log_in_with_github" href="{{ url_for('login') }}" >
-                    Log in with Github
-                 </button>
-                 <div id="let_s_git_reverb" >
-                     Let's Git Reverb
-                 </div>
-                 <div id="code_is_like_humor__when_you_have_to_explain_it__it_s_bad_" >
-                     Code is like humor. When you have to explain it, it's bad.
-                 </div>
- 
-             </div>
-             <img src="/Users/ripunjaysingh/learn/Gitreverb/Templates/skins/git_analysis_networking_development_1.png" id="git_analysis_networking_development_1" />
- 
-         </div>
-     </body>
- </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Rubik:wght@700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+          position: relative;
+          text-align: center;
+          color: white;
+        }
+        .main {
+            position: absolute;
+            font-family:'Rubik';
+            font-weight:bold;
+            font-size: 50px;
+            top: 30%;
+            left: 35%;
+            transform: translate(-30%, -35%); 
+        }
+        .content{
+            position: absolute;
+            font-family:'Poppins';
+            font-weight:lighter;
+            font-size: 25px;
+            top: 42%;
+            left: 42%;
+            transform: translate(-42%, -42%);
+            display: inline-block;
+        }
+        .btn-login{
+            position: absolute;
+            top:48%;
+            left:48%;
+            transform: translate(-48%,-48%);
+            background-color: var(--white-colour);
+            font-family:'Poppins';
+            font-style: bold;
+            font-weight: bold;
+            padding-top:8px;
+            padding-bottom: 8px;
+            padding-left:16px;
+            padding-right:16px;
+            border-radius:10px;
+            color:#000000;
+            display: inline-block;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body style="background-color:black;">
+    <div class="container">
+        <img src="/Users/ripunjaysingh/learn/Gitreverb/Templates/backlogin.jpg" alt="Snow" style="width:100%;">
+        <div class="main">
+            <h1>LET'S GIT REVERB</h1></div>
+        <div class='content'>
+            <p>CODE IS LIKE HUMOR, WHEN YOU HAVE TO EXPLAIN IT, IT'S BAD</p></div>
+        <!-- <div class='btn-login'> -->
+        <div><button class="btn-login"><a style='text-decoration: none;' href="{{url_for('login')}}">LOGIN WITH GITHUB</a></button></div>
+    </div>
+    
+</body>
+</html>

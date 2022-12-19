@@ -1,0 +1,368 @@
+/*
+	@name desktop___1
+*/
+/* Only edit this if you know what you are doing! */
+body { margin: 0px; padding: 0px; font-family:"Arial"; overflow-x:hidden; }
+
+/* Only edit this if you know what you are doing! */
+img { position: absolute; display: block; margin: 0px; border: none; padding: 0px; }
+
+/* Only edit this if you know what you are doing! */
+div { position: absolute; }
+
+#content-container { display: block;
+					position: relative;
+					width: 100%;
+					height: 100%; 
+					overflow: auto; 
+					display: block;  
+					margin-left: auto; 
+					margin-right: auto; 
+					background-image: url("unsplash_g9i_plbfdgk.png"); 
+					background-color: rgb(22,27,34),; }
+
+#_bg__desktop___1 {
+	top: 0px;
+	left: 0px;
+	width: 1440px;
+	height: 2000px;
+	color:black;
+}
+
+
+#unsplash_g9i_plbfdgk {
+	top: 0px !important;
+	position: absolute !important;
+	left: 0px;
+	width: 1713px;
+	height: 1212px;
+	background:url(/Users/ripunjaysingh/learn/Gitreverb/Templates/skins/unsplash_g9i_plbfdgk.png);
+	background-size:cover;
+}
+
+
+#git_reverb {
+	top: 12px;
+	left: 99px;
+	width: 226.62833976746px;
+	height: 73.628339767456px;
+	overflow: hidden;
+	font-family: Poppins;
+	font-size: 33.26px;
+	font-weight: bold;
+	text-align: left;
+	color:#FFFFFF;
+}
+
+
+#_12_followers {
+	top: 311px;
+	left: 811px;
+	width: 218px;
+	height: 54px;
+	overflow: hidden;
+	font-family: Rubik;
+	font-size: 24px;
+	text-align: center;
+	line-height: 32.153434753418px;
+	letter-spacing: 1.68px;
+	color:#FFFFFF;
+}
+
+
+#blah_bhal_bhal_blah_bhal_bhalblah_bhal_bhalblah_bhal_bhalblah_bhal_bhalblah_bhal_bhalblah__ {
+	top: 409px;
+	left: 552px;
+	width: 727.925532341px;
+	height: 74.925532341003px;
+	overflow: hidden;
+	font-family: Rubik;
+	font-size: 19.85px;
+	text-align: left;
+	line-height: 26.593569993973px;
+	letter-spacing: 1.3895px;
+	color:#FFFFFF;
+}
+
+
+#bio {
+	top: 380px;
+	left: 552px;
+	width: 87.925532341003px;
+	height: 39.925532341003px;
+	overflow: hidden;
+	font-family: Rubik;
+	font-size: 19.85px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 26.593569993973px;
+	letter-spacing: 1.3895px;
+	color:#FFFFFF;
+}
+
+
+#_12_followers_ek1 {
+	top: 311px;
+	left: 1058px;
+	width: 210px;
+	height: 48px;
+	overflow: hidden;
+	font-family: Rubik;
+	font-size: 24px;
+	text-align: center;
+	line-height: 32.153434753418px;
+	letter-spacing: 1.68px;
+	color:#FFFFFF;
+}
+
+
+#_20_repositries {
+	top: 311px;
+	left: 548px;
+	width: 232px;
+	height: 48px;
+	overflow: hidden;
+	font-family: Rubik;
+	font-size: 24px;
+	text-align: center;
+	line-height: 32.153434753418px;
+	letter-spacing: 1.68px;
+	color:#FFFFFF;
+}
+
+
+#ripunjay {
+	top: 176px;
+	left: 500px;
+	width: 382.09551620483px;
+	height: 98.095516204834px;
+	overflow: hidden;
+	font-family: Rubik;
+	font-size: 30.19px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 64.561417531967px;
+	letter-spacing: 3.3733px;
+	color:#FFFFFF;
+}
+
+
+#developer {
+	top: 230px;
+	left: 532px;
+	width: 201px;
+	height: 54px;
+	overflow: hidden;
+	font-family: Rubik;
+	font-size: 24px;
+	text-align: center;
+	line-height: 32.153434753418px;
+	letter-spacing: 1.68px;
+	color:#FFFFFF;
+}
+
+
+#ellipse_1 {
+	top: 146px;
+	left: 164px;
+	width: 247px;
+	height: 247px;
+	-ms-border-radius: 123.5px / 123.5px;
+	-o-border-radius: 123.5px / 123.5px;
+	-moz-border-radius: 123.5px / 123.5px;
+	-webkit-border-radius: 123.5px / 123.5px;
+	border-radius: 123.5px / 123.5px;
+	-ms-box-shadow:0px 3.61px 4px 1px rgba(0,0,0,0.25);
+	-o-box-shadow:0px 3.61px 4px 1px rgba(0,0,0,0.25);
+	-webkit-box-shadow:0px 3.61px 4px 1px rgba(0,0,0,0.25);
+	-moz-box-shadow:0px 3.61px 4px 1px rgba(0,0,0,0.25);
+	box-shadow:0px 3.61px 4px 1px rgba(0,0,0,0.25);
+	background:rgba(217,217,217,1);
+}
+
+
+#line_1 {
+	top: 540.5px;
+	left: 127px;
+	width: 1153px;
+	height: 1px;
+	background:#FFFFFF;
+}
+
+
+#repos {
+	top: 554px;
+	left: 645px;
+	width: 125px;
+	height: 53px;
+	overflow: hidden;
+	font-family: Rubik;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 32.153434753418px;
+	letter-spacing: 1.68px;
+	color:#FFFFFF;
+}
+
+
+#line_2 {
+	top: 79px;
+	left: -0.01px;
+	width: 1440.01px;
+	height: 1px;
+	background:#FFFFFF;
+}
+
+#component_1 {
+	top: 193px;
+	left: 857px;
+	width: 130px;
+	height: 30.19px;
+}
+
+#rectangle_1 {
+	top: 0px;
+	left: 0px;
+	width: 130px;
+	height: 30.19px;
+	-ms-border-radius: 8.39px;
+	-o-border-radius: 8.39px;
+	-moz-border-radius: 8.39px;
+	-webkit-border-radius: 8.39px;
+	border-radius: 8.39px;
+	background:rgba(0,132.83,141.31,1);
+}
+
+
+#message {
+	top: 3px;
+	left: 24px;
+	width: 103.38709640503px;
+	height: 38.387096405029px;
+	overflow: hidden;
+	font-family: Poppins;
+	font-size: 16.77px;
+	font-weight: bold;
+	text-align: left;
+	color:#FFFFFF;
+}
+
+#ripo {
+	top: 600px;
+	left: 0px;
+	/* width: 125px;
+	height: 53px;  */
+	overflow: hidden;
+	font-family: Rubik;
+	font-size: 12px;
+	text-align: left;
+	line-height: 32.153434753418px;
+	letter-spacing: 1.68px;
+	color:#FFFFFF;
+}
+
+
+
+a:link {
+  color: whitesmoke;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: whitesmoke;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: whitesmoke;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: whitesmoke;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/* Add your custom CSS here */
+
+#content-contain { display: block; 
+				position: relative; 
+				width: 1080px; 
+				width: 1080px; 
+				height: 1080px; 
+				overflow: hidden; 
+				display: block;  
+				margin-left: auto; 
+				margin-right: auto;
+				background-image: url("screenshot_2022_12_19_112810_1.png");
+				background-color: black;  }
+
+#_bg__instagram_post___2 {
+	top: 0px;
+	left: 0px;
+	width: 1080px;
+	height: 1080px;
+	background:rgba(255,255,255,1);
+}
+
+
+#screenshot_2022_12_19_112810_1 {
+	top: 0px;
+	left: 0px;
+	width: 1101px;
+	height: 1080px;
+}
+
+
+#chrome_extentions_you_should_use {
+	top: 107px;
+	left: 16px;
+	width: 1065.3043441772px;
+	height: 236.30434417725px;
+	overflow: hidden;
+	font-family: Rubik;
+	font-size: 80.61px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 107.99534897804px;
+	letter-spacing: 5.6427px;
+	color:#FFFFFF;
+}
+
+
+#vihan_saraswat {
+	top: 969px;
+	left: 31.4px;
+	width: 321.40977062225px;
+	height: 57.269770622253px;
+	overflow: hidden;
+	font-family: Poppins;
+	font-size: 29.04px;
+	font-style: italic;
+	text-align: center;
+	line-height: 38.905656051636px;
+	letter-spacing: 2.0328px;
+	color:#FFFFFF;
+}
+
+
+#develop {
+	top: 1005.59px;
+	left: 9px;
+	width: 221.26428779602px;
+	height: 39.044287796021px;
+	overflow: hidden;
+	font-family: Poppins;
+	font-size: 19.85px;
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+	line-height: 26.593569993973px;
+	letter-spacing: 1.3895px;
+	color:#FFFFFF;
+}

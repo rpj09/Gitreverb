@@ -76,7 +76,8 @@ def index():
         t %= g.user.github_login #it replaces %s with user's name
     else:
         #login page can be inserted here
-        t = 'Hello! <a href="{{ url_for("login") }}">Login with github</a>'
+        #t = 'Hello! <a href="{{ url_for("login") }}">Login with github</a>'
+        return render_template('index.html')
 
     return render_template_string(t)
 
@@ -145,8 +146,9 @@ def user(): #this function is used to get user's details
     pubic_repos = userss["public_repos"]
     followers = userss["followers"]
     following = userss["following"]
+    no_repos = userss["public_repos"]
     
-    return render_template('profile.html', 
+    return render_template('desktop___1.html', 
                             avatar=avatar,
                             name=name,
                             bio=bio,
@@ -155,21 +157,27 @@ def user(): #this function is used to get user's details
                             public_repos=pubic_repos,
                             email=email, 
                             repolist=repolist,
-                            repos=repos)
+                            repos=repos,
+                            no_repos=no_repos)
     #return jsonify(github.get('/user'))
 
 @app.route(f'/user/<username>')
 def anyuser(username):
     return jsonify(github.get('/users/{}'.format(username)))
 
+
 @app.route('/user/followers')
 def followers():
     followersjson = (github.get('/user/followers'))
-    followerslist =[]
+
+    #followerslist,img =[],[]
+    dict = {}
     for follower in followersjson:
-        followerslist.append(follower['login'])
+        #followerslist.append(follower['login'])
+        #img.append(follower['avatar_url'])
+        dict[follower['login']] = [follower['avatar_url'],follower['html_url']]
     return render_template('followers.html',
-                            followerslist=followerslist,
+                            followersdict=dict,
                             followersjson=followersjson,
                             url_for=url_for,
                             anyuser=anyuser)
@@ -177,10 +185,11 @@ def followers():
 @app.route('/user/following')
 def following():
     followingjson = (github.get('/user/following'))
-    followinglist = []
+    followingdict = {}
     for following in followingjson:
-        followinglist.append(following['login'])
-    return render_template('following.html', followingjson=followingjson)
+        #followinglist.append(following['login'])
+        followingdict[following['login']] = [following['avatar_url'],following['html_url']]
+    return render_template('following.html', followingjson=followingjson,followingdict=followingdict)
 
 
 

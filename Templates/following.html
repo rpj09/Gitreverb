@@ -1,7 +1,28 @@
 <h1>FOLLOWING:</h1>
-<ul>
+<!-- <ul>
     {% for user in followingjson %}
         <a href="{{user['url']}}">{{user['login']}}</a>
         <p> </p>
     {% endfor %}
- </ul>
+ </ul> -->
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    .avatar {
+      vertical-align: middle;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+    }
+    </style>
+    <ul>
+        {% for user in followingdict %}
+            <img src={{followingdict[user][0]}} alt="Avatar" class="avatar">
+            <a href="{{followingdict[user][1]}}">{{user}}</a>
+            
+            <p> </p>
+        {% endfor %}
+     </ul>
+    </head>
+    <body>
+    
