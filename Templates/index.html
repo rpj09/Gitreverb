@@ -11,20 +11,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Rubik:wght@700&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <style>
         .container {
           position: relative;
           text-align: center;
           color: white;
+          background-image: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2944&q=80");
+          background-color: #000000;
         }
         .main {
             position: absolute;
             font-family:'Rubik';
             font-weight:bold;
             font-size: 50px;
-            top: 30%;
-            left: 35%;
+            top: 200px;
+            left: 36%;
             transform: translate(-30%, -35%); 
         }
         .content{
@@ -32,40 +34,70 @@
             font-family:'Poppins';
             font-weight:lighter;
             font-size: 25px;
-            top: 42%;
-            left: 42%;
+            top: 315px;
+            left: 46%;
             transform: translate(-42%, -42%);
             display: inline-block;
         }
         .btn-login{
             position: absolute;
-            top:48%;
+            top: 400px;
             left:48%;
             transform: translate(-48%,-48%);
-            background-color: var(--white-colour);
+            background-color: black;
             font-family:'Poppins';
             font-style: bold;
-            font-weight: bold;
+            font-weight: bold !important; 
             padding-top:8px;
             padding-bottom: 8px;
             padding-left:16px;
             padding-right:16px;
-            border-radius:10px;
-            color:#000000;
+            border-radius:15px;
+            color:white;
             display: inline-block;
             font-size: 15px;
+            box-shadow: 0 17px 30px 0 rgba(63, 111, 201, 0.24), 0 20px 60px 0 rgba(63, 111, 201, 0.24);
         }
+
+
+        a:link {
+        color: whitesmoke;
+        background-color: transparent;
+        text-decoration: none;
+        }
+
+        a:visited {
+        color: whitesmoke;
+        background-color: transparent;
+        text-decoration: none;
+        }
+
+        a:hover {
+        color: whitesmoke;
+        background-color: transparent;
+        text-decoration: underline;
+        }
+
+        a:active {
+        color: whitesmoke;
+        background-color: transparent;
+        text-decoration: underline;
+        }
+        .btn-login:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);}
+        
     </style>
 </head>
 <body style="background-color:black;">
     <div class="container">
-        <img src="/Users/ripunjaysingh/learn/Gitreverb/Templates/backlogin.jpg" alt="Snow" style="width:100%;">
+        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2944&q=80" alt="Snow" style="width:100%;">
         <div class="main">
             <h1>LET'S GIT REVERB</h1></div>
         <div class='content'>
-            <p>CODE IS LIKE HUMOR, WHEN YOU HAVE TO EXPLAIN IT, IT'S BAD</p></div>
+            <p>If you can dream it, you can do it.</p></div>
         <!-- <div class='btn-login'> -->
-        <div><button class="btn-login"><a style='text-decoration: none;' href="{{url_for('login')}}">LOGIN WITH GITHUB</a></button></div>
+        <div><button class="btn-login" ><a
+             style='color: whitesmoke;font-style: bold;font-weight: bold;font-family:"Poppins"' href="{{url_for('login')}}">LOGIN WITH GITHUB</a></button></div>
     </div>
     
 </body>
