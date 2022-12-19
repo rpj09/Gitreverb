@@ -80,32 +80,27 @@
 				 </div>
  
 			 </div>
-			 <div id="ripo" >
-				<ul>
+			 <div style="display:flex;position: absolute;width: 100%;min-width: 100%;flex-wrap: wrap;z-index: 10000; ;" id="ripo" >
+
 					{% for repoo in repos %}
-						<!-- <div id="content-contain" >
-							<div id="_bg__instagram_post___2"  ></div>
-							<img src="screenshot_2022_12_19_112810_1.png" id="screenshot_2022_12_19_112810_1" />
-							<div id="chrome_extentions_you_should_use" >
-								<span style="font-size:80.608688354492; font-style:normal; text-decoration:NONE; ">CHROME EXTENTIONS<br/></span><span style="color:#00FFB2; font-size:80.608688354492; font-style:normal; text-decoration:NONE; ">YOU SHOULD US</span>
-							</div>
-							<div id="vihan_saraswat" >
-								VIHAN SARASWAT
-							</div>
-							<div id="develop" >
+					<div style="display: inline;max-width: 335px;">
+						<div class="content-contain" >
+						<div class="screenshot_2022_12_19_112810_1" >
+							<a href="{{repoo['url']}}" style="font-size:1.2rem;padding: 15px; font-style:normal; text-decoration:NONE; color:aliceblue;text-align: center;">{{repoo['name']}}</a>
+							<div class="vihan_saraswat" >
+								{{name}}<br>
 								DEVELOPER
-						</div> -->
-						<a href="{{repoo['url']}}"> ➤ {{repoo['name']}}</a>
-						<p> </p>
-						<p> </p>
+							 </div>
+						</div>
+						</div>
 						{% if repoo['description']!=None  %}
-							<p> </p>
-							<p>➟DESCRIPTION: {{repoo['description']}}</p>
+							<p style="padding: 10px;text-align: center;">DESCRIPTION: {{repoo['description']}}</p>
 						{% endif %}
-						
-					{% endfor %}
 					</div>
-				</ul>
+					{% endfor %}
+					
+				
+
 			</div>
  
 		 </div>
