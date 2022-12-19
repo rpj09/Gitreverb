@@ -1,0 +1,82 @@
+/*
+	@name instagram_post___2
+*/
+/* Only edit this if you know what you are doing! */
+body { margin: 0px; padding: 0px; font-family:"Arial"; overflow-x:hidden; }
+
+/* Only edit this if you know what you are doing! */
+img { position: absolute; display: block; margin: 0px; border: none; padding: 0px; }
+
+/* Only edit this if you know what you are doing! */
+div { position: absolute; }
+
+#content-contain { display: block; position: relative; width: 1080px; width: 1080px; height: 1080px; overflow: hidden; display: block;  margin-left: auto; margin-right: auto;  }
+
+#_bg__instagram_post___2 {
+	top: 0px;
+	left: 0px;
+	width: 1080px;
+	height: 1080px;
+	background:rgba(255,255,255,1);
+}
+
+
+#screenshot_2022_12_19_112810_1 {
+	top: 0px;
+	left: 0px;
+	width: 1101px;
+	height: 1080px;
+}
+
+
+#chrome_extentions_you_should_use {
+	top: 107px;
+	left: 16px;
+	width: 1065.3043441772px;
+	height: 236.30434417725px;
+	overflow: hidden;
+	font-family: Rubik;
+	font-size: 80.61px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 107.99534897804px;
+	letter-spacing: 5.6427px;
+	color:#FFFFFF;
+}
+
+
+#vihan_saraswat {
+	top: 969px;
+	left: 31.4px;
+	width: 321.40977062225px;
+	height: 57.269770622253px;
+	overflow: hidden;
+	font-family: Poppins;
+	font-size: 29.04px;
+	font-style: italic;
+	text-align: center;
+	line-height: 38.905656051636px;
+	letter-spacing: 2.0328px;
+	color:#FFFFFF;
+}
+
+
+#develop {
+	top: 1005.59px;
+	left: 9px;
+	width: 221.26428779602px;
+	height: 39.044287796021px;
+	overflow: hidden;
+	font-family: Poppins;
+	font-size: 19.85px;
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+	line-height: 26.593569993973px;
+	letter-spacing: 1.3895px;
+	color:#FFFFFF;
+}
+
+
+
+/* Add your custom CSS here */

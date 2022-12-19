@@ -1,7 +1,24 @@
 <h1>FOLLOWERS:</h1>
-<ul>
-    {% for user in followersjson %}
-        <a href="{{user['url']}}">{{user['login']}}</a>
-        <p> </p>
-    {% endfor %}
- </ul>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    .avatar {
+      vertical-align: middle;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+    }
+    </style>
+    <ul>
+        {% for user in followersdict %}
+            <img src={{followersdict[user][0]}} alt="Avatar" class="avatar">
+            <a href="{{followersdict[user][1]}}">{{user}}</a>
+            
+            <p> </p>
+        {% endfor %}
+     </ul>
+    </head>
+    <body>
+    
+    
+    
