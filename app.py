@@ -69,17 +69,19 @@ def after_request(response):
 @app.route('/')
 def index():
     if g.user:
+        userss =(github.get('/user'))
+        avatar = userss["avatar_url"]
+        name = userss["name"]
         #homepage can be inserted here
-        t = 'Hello! %s <a href="{{ url_for("user") }}">Get user</a> ' \
-            '<a href="{{ url_for("repo") }}">Get repo</a> ' \
-            '<a href="{{ url_for("logout") }}">Logout</a>'
-        t %= g.user.github_login #it replaces %s with user's name
+        t = 'homepagee.html'
+        render_template('homepagee.html',avatar=avatar,name=name)
+
     else:
         #login page can be inserted here
         #t = 'Hello! <a href="{{ url_for("login") }}">Login with github</a>'
         return render_template('index.html')
 
-    return render_template_string(t)
+    return render_template(t,avatar=avatar,name=name)
 
 
 @github.access_token_getter

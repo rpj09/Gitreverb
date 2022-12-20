@@ -1,0 +1,187 @@
+/*
+	@name desktop___2
+*/
+/* Only edit this if you know what you are doing! */
+body { margin: 0px; padding: 0px; font-family:"Arial"; overflow-x:hidden; }
+
+/* Only edit this if you know what you are doing! */
+img { position: absolute; display: block; margin: 0px; border: none; padding: 0px; }
+
+/* Only edit this if you know what you are doing! */
+div { position: absolute; }
+
+#content-container { display: block; position: relative; width: 1440px; width: 1440px; height: 1024px; overflow: hidden; display: block;  margin-left: auto; margin-right: auto;  }
+
+#_bg__desktop___2 {
+	top: 0px;
+	left: 0px;
+	width: 1440px;
+	height: 1024px;
+	background:rgba(255,255,255,1);
+}
+
+
+#unsplash_cspju6hyo_0 {
+	top: -2px;
+	left: 0px;
+	width: 1440px;
+	height: 1026px;
+}
+
+
+#git_reverb {
+	top: 15px;
+	left: 57px;
+	width: 226.62833976746px;
+	height: 73.628339767456px;
+	overflow: hidden;
+	font-family: Poppins;
+	font-size: 33.26px;
+	font-weight: bold;
+	text-align: left;
+	color:#FFFFFF;
+}
+.user {
+	top: 0px;
+	left: 10px;
+	font-family: Poppins;
+	font-size: 1rem;
+	text-align: left;
+	color:#FFFFFF;
+}
+.log {
+	top: 0px;
+	font-family: Poppins;
+	font-size: 1rem;
+	color:#FFFFFF;
+	text-align: right;
+	right: 10px;
+}
+
+
+#hello_user_ {
+	top: 176px;
+	left: 430px;
+	width: 678.22448730469px;
+	height: 208.22448730469px;
+	overflow: hidden;
+	font-family: Poppins;
+	font-size: 3rem;
+	font-weight: bold;
+	text-align: left;
+	color:#FFFFFF;
+}
+
+
+#__all_our_dreams_can_come_true__if_we_have_the_courage_to_pursue_them____walt_disney {
+	top: 851px;
+	left: 731px;
+	width: 669px;
+	height: 69.504109382629px;
+	overflow: hidden;
+	font-family: Poppins;
+	font-size: 17.01px;
+	text-align: right;
+	color:#FFFFFF;
+}
+
+
+#top_line {
+	top: 79px;
+	left: -0.01px;
+	width: 1440.01px;
+	height: 1px;
+	background:#FFFFFF;
+}
+
+
+#profile {
+	top: 18px;
+	left: 1066px;
+	width: 50px;
+	height: 50px;
+}
+
+#component_1 {
+	top: 25px;
+	left: 1259px;
+	width: 130px;
+	height: 30.19px;
+}
+
+#rectangle_1 {
+	top: 0px;
+	left: 0px;
+	width: 130px;
+	height: 30.19px;
+	-ms-border-radius: 8.39px;
+	-o-border-radius: 8.39px;
+	-moz-border-radius: 8.39px;
+	-webkit-border-radius: 8.39px;
+	border-radius: 8.39px;
+	background:rgba(0,132.83,141.31,1);
+}
+
+
+#log_out {
+	top: 3px;
+	left: 24px;
+	width: 103.38709640503px;
+	height: 38.387096405029px;
+	overflow: hidden;
+	font-family: Poppins;
+	font-size: 16.77px;
+	font-weight: bold;
+	text-align: left;
+	color:black;
+}
+
+
+#rectangle_2 {
+	top: 25px;
+	left: 1168px;
+	width: 39px;
+	height: 39px;
+}
+
+
+#center_circle {
+	top: 318px;
+	left: 560px;
+	width: 320px;
+	height: 320px;
+	-ms-border-radius: 160px / 160px;
+	-o-border-radius: 160px / 160px;
+	-moz-border-radius: 160px / 160px;
+	-webkit-border-radius: 160px / 160px;
+	border-radius: 160px / 160px;
+	background:rgba(217,217,217,1);
+}
+
+
+
+/* Add your custom CSS here */
+
+a:link {
+	color: whitesmoke;
+	background-color: transparent;
+	text-decoration: none;
+  }
+  
+  a:visited {
+	color: whitesmoke;
+	background-color: transparent;
+	text-decoration: none;
+  }
+  
+  a:hover {
+	color: whitesmoke;
+	background-color: transparent;
+	text-decoration: underline;
+  }
+  
+  a:active {
+	color: whitesmoke;
+	background-color: transparent;
+	text-decoration: underline;
+  }
