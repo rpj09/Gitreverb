@@ -12,6 +12,7 @@ import requests
 from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.orm import scoped_session, sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
+import os
 
 DATABASE_URI = 'sqlite:////tmp/github-flask.db'
 SECRET_KEY = 'development key'
@@ -19,7 +20,7 @@ DEBUG = True
 
 # Set these values
 GITHUB_CLIENT_ID = 'e1d2aa8102db9a9bdb2f'
-GITHUB_CLIENT_SECRET = '6022923411bc6e7f8c777ac9390a5b3e7d0fc466'
+GITHUB_CLIENT_SECRET = os.environ['githubclientsec']
 
 # setup flask
 app = Flask(__name__)
@@ -202,4 +203,5 @@ def repo():
 
 if __name__ == '__main__':
     init_db()
-    app.run(debug=True)
+    #app.run(debug=True)
+    app.run(host="0.0.0.0",port=8000)
