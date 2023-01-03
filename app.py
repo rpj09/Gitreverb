@@ -159,7 +159,7 @@ def user(): #this function is used to get user's details
                             no_repos=no_repos)
     #return jsonify(github.get('/user'))
 
-@app.route(f'/user/<username>')
+@app.route('/user/<username>')
 def anyuser(username):
     userss =(github.get(f'/user/{username}'))
     repos= github.get(f'/user/{username}/repos')
