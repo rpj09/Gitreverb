@@ -161,8 +161,8 @@ def user(): #this function is used to get user's details
 
 @app.route('/user/<username>')
 def anyuser(username):
-    userss =(github.get(f'/user/{username}'))
-    repos= github.get(f'/user/{username}/repos')
+    userss =(github.get(f'/{username}'))
+    repos= github.get(f'/{username}/repos')
     repolist = []
     for repo in repos:
         repolist.append(repo['name'])
