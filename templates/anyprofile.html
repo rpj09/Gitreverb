@@ -1,0 +1,106 @@
+<!-- 
+/*
+ *	This content is generated from the PSD File Info.
+ *	(Alt+Shift+Ctrl+I).
+ *
+ *	@desc 		
+ *	@file 		desktop___1
+ *	@date 		Monday 19th of December 2022 07:06:40 AM
+ *	@title 		Page 1
+ *	@author 	
+ *	@keywords 	
+ *	@generator 	Export Kit v1.3.figma
+ *
+*/
+ -->
+ <!DOCTYPE html>
+ <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" >
+	 <head>
+		 <meta http-equiv="content-type" content="text/html" charset="utf-8" />
+		 <title>desktop___1</title>
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		 <meta name="description" content="" >
+		 <link rel="StyleSheet" type= "text/css" href="{{ url_for('static',filename='css/desktop___1.css') }}" />
+		 <script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
+ 
+		 <!-- Add your custom HEAD content here -->
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+		 <style>
+		 .avatar {
+		   vertical-align: middle;
+		   width: 250px;
+		   height: 250px;
+		   border-radius: 50%;
+		 }
+		 </style>
+ 
+	 </head>
+	 <body>
+		 
+		 <div id="content-container" style="overflow:scroll; height:1000px;" >
+			 <div id="_bg__desktop___1"  ></div>
+			 <div id="unsplash_g9i_plbfdgk"  ></div>
+			 <div id="git_reverb" >
+				 GIT REVERB
+			 </div>
+			 <div id="_12_followers" >
+				 <a href="/user/followers">{{followers}} followers</a>
+			 </div>
+			 <div id="blah_bhal_bhal_blah_bhal_bhalblah_bhal_bhalblah_bhal_bhalblah_bhal_bhalblah_bhal_bhalblah__" >
+				 {{bio}}
+			 </div>
+			 <div id="bio" >
+				 BIO
+			 </div>
+			 <div id="_12_followers_ek1" >
+				 <a href="/user/following"> {{following}} following</a>
+			 </div>
+			 <div id="_20_repositries" >
+				 {{no_repos}} Repositories
+			 </div>
+			 <div id="ripunjay" >
+				 {{name}}
+			 </div>
+			 <div id="developer" >
+				 DEVELOPER
+			 </div>
+			 <div id="ellipse_1"  >
+				<img src={{avatar}} alt="Avatar" class="avatar">
+			 </div>
+			 <div id="line_1"  ></div>
+			 <div id="repos" >
+				 REPOS
+			 </div>
+			 <div id="line_2"  ></div>
+ 
+			 <div id="component_1"  >
+				 <div id="rectangle_1"  ></div>
+				 <div id="message" >
+					 MESSAGE
+				 </div>
+ 
+			 </div>
+			 <div style="display:flex;position: absolute;width: 100%;min-width: 100%;flex-wrap: wrap;z-index: 10000; ;" id="ripo" >
+
+					{% for repoo in repos %}
+					<div style="display: inline;max-width: 335px;">
+						<div class="content-contain" >
+						<div class="screenshot_2022_12_19_112810_1" >
+							<a href="{{repoo['html_url']}}" style="font-size:1.2rem;padding: 15px; font-style:normal; text-decoration:NONE; color:aliceblue;text-align: center;">{{repoo['name']}}</a>
+							<div class="vihan_saraswat" >
+								{{name}}<br>
+								DEVELOPER
+							 </div>
+						</div>
+						</div>
+							<p style="padding: 10px;text-align: center;">DESCRIPTION: {{repoo['description']}}</p>
+					</div>
+					{% endfor %}
+					
+				
+
+			</div>
+ 
+		 </div>
+	 </body>
+ </html>
