@@ -133,7 +133,7 @@ def logout():
 def user(): #this function is used to get user's details
     #we can put th profile section here
     userss =(github.get('/user'))
-    repos= github.get('/user/repos')
+    repos= github.get('/user/repos?all')
     repolist = []
     for repo in repos:
         repolist.append(repo['name'])
@@ -162,7 +162,7 @@ def user(): #this function is used to get user's details
 @app.route('/user/<username>')
 def anyuser(username):
     userss =(github.get(f'/users/{username}'))
-    repos= github.get(f'/users/{username}/repos')
+    repos= github.get(f'/users/{username}/repos?all')
     repolist = []
     for repo in repos:
         repolist.append(repo['name'])
