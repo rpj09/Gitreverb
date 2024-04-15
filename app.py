@@ -1,21 +1,21 @@
-from flask import Flask, request, g, session, redirect, url_for, render_template
-from flask import render_template_string, jsonify
-from flask_github import GitHub
 import json
-import requests
-
-from sqlalchemy import create_engine, Column, Integer, String
-from sqlalchemy.orm import scoped_session, sessionmaker
-from sqlalchemy.ext.declarative import declarative_base
 import os
+
+import requests
+from flask import (Flask, g, jsonify, redirect, render_template,
+                   render_template_string, request, session, url_for)
+from flask_github import GitHub
+from sqlalchemy import Column, Integer, String, create_engine
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import scoped_session, sessionmaker
 
 DATABASE_URI = 'sqlite:////tmp/github-flask.db'
 SECRET_KEY = 'development key'
 DEBUG = True
 
 # Set these values
-GITHUB_CLIENT_ID = 'e1d2aa8102db9a9bdb2f'
-GITHUB_CLIENT_SECRET = os.environ['githubclientsec']
+GITHUB_CLIENT_ID = '7cffdeaec480efaae537'
+GITHUB_CLIENT_SECRET = "2127ca287f178e7b7b4f2d96eea0e55470dda5f8"
 
 # setup flask
 app = Flask(__name__)
@@ -223,5 +223,5 @@ def repo():
 
 if __name__ == '__main__':
     init_db()
-    #app.run(debug=True)
-    app.run(host="0.0.0.0",port=8000)
+    app.run(debug=True)
+    # app.run(host="0.0.0.0",port=8000)
